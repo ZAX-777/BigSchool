@@ -65,6 +65,10 @@ namespace BigSchool.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "FullName")]
+        public string Name { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
